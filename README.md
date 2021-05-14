@@ -1,4 +1,4 @@
 # SaitamaCounter
-Created for personal use, but can be used by anyone.
+Free for personal use.
 
 No registration required: all the data is saved in local storage.
