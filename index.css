@@ -97,6 +97,7 @@ button
 }
 .icon-img
 {
-    width: 60%; 
-    height: 60%;
+    margin: 1vh;
+    width: 10vh; 
+    height: 10vh;
 }
