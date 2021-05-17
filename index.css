@@ -1,3 +1,11 @@
+*
+{
+    box-sizing: border-box;
+} 
+html
+{
+    height: 100vh; 
+}
 body
 {
     background-color: black;
@@ -5,36 +13,45 @@ body
     background-repeat: no-repeat;
     background-position: center 25vh;
     text-align: center;
+    height: 100%;
 }
 button
 {
     background-color: rgb(230, 214, 3);
-    padding: 3vw;
+    padding: 3px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 5vw;
     font-weight: bold;
     color: rgb(39, 29, 0);
     border-radius: 5%;
+
+    display: block;
+    margin: 1px 0;
+    width: 100%;
+    height: 100%;
 }
 
 .top-div
 {
-    color: rgb(129, 133, 151);
-    background-color: #b400006e;
+    color: rgb(196, 202, 230);
+    background-color: #d40000b0;
     margin: 3vw;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 5vw;
+    font-weight: bolder;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction:column;
 
     border-color: rgb(12, 12, 12);
     border-style: solid;
-    align-self: auto;
-    padding: 5vw;
-    height: 7vh;
+    
+    height: auto;
     box-shadow: 2px 2px 6px #8e95a36e;
+
+    overflow: hidden;
+    white-space: pre-line;
 }
 .wrapper
 {
@@ -57,12 +74,19 @@ button
 
     border-color: rgb(12, 12, 12);
     border-style: solid;
-    padding: 5vw;
-    height: 7vh;
+    height: 12vh;
     box-shadow: 2px 2px 6px #8e95a36e;
+
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-right: 3vw;
 }
 .middle-div-right
 {
+    background-color: #36393f6e;
+    border-color: rgb(12, 12, 12);
+    border-style: solid;
+
     flex: 1;
     
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -72,6 +96,5 @@ button
     justify-content:space-around;
     align-items: center;
 
-    padding: 5vw;
-    height: 7vh;
+    height: 12vh;
 }
