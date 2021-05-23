@@ -6,28 +6,47 @@
 body
 {
     background-color: black;
-    background-image: url("backdrop.png");
+    background-image: url("resources/backdrop.png");
     background-repeat: no-repeat;
-    background-position: center 25vh;
+    background-position: center 10vh;
     text-align: center;
     height: 100%;
 }
 button
 {
-    background-color: rgba(230, 215, 3, 0.637);
-    padding: 3px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 5vw;
-    font-weight: bold;
-    color: rgb(39, 29, 0);
-    border-radius: 5%;
-
-    touch-action: none;
-
-    display: block;
+    display: inline-block;
     margin: 1px 0;
     width: 100%;
     height: 100%;
+
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: rgba(230, 215, 3, 0.637);
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+button:hover {
+    background: #ffbb00;
+}
+
+button:focus {
+    outline: 1px solid rgb(255, 145, 0);
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.80);
 }
 
 .top-div
@@ -48,6 +67,7 @@ button
     
     height: auto;
     box-shadow: 2px 2px 6px #8e95a36e;
+    text-shadow: 2px 2px 8px #000000;
 
     overflow: hidden;
     white-space: pre-line;
@@ -74,7 +94,8 @@ button
     border-color: rgb(12, 12, 12);
     border-style: solid;
     height: 12vh;
-    box-shadow: 2px 2px 6px #8e95a36e;
+    box-shadow: 2px 2px 6px #0000006e;
+    text-shadow: 2px 2px 8px #000000;
 
     padding-left: 3vw;
     padding-right: 3vw;
